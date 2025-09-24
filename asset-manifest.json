@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Pranali-Kshirsagar-Portfolio-website/static/css/main.776a86ac.css",
-    "main.js": "/Pranali-Kshirsagar-Portfolio-website/static/js/main.0c27ae4d.js",
+    "main.js": "/Pranali-Kshirsagar-Portfolio-website/static/js/main.c8bd00fa.js",
     "static/js/453.438d9e50.chunk.js": "/Pranali-Kshirsagar-Portfolio-website/static/js/453.438d9e50.chunk.js",
     "static/media/about-bg.jpg": "/Pranali-Kshirsagar-Portfolio-website/static/media/about-bg.d86c900be96e560271fa.jpg",
     "index.html": "/Pranali-Kshirsagar-Portfolio-website/index.html",
     "main.776a86ac.css.map": "/Pranali-Kshirsagar-Portfolio-website/static/css/main.776a86ac.css.map",
-    "main.0c27ae4d.js.map": "/Pranali-Kshirsagar-Portfolio-website/static/js/main.0c27ae4d.js.map",
+    "main.c8bd00fa.js.map": "/Pranali-Kshirsagar-Portfolio-website/static/js/main.c8bd00fa.js.map",
     "453.438d9e50.chunk.js.map": "/Pranali-Kshirsagar-Portfolio-website/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.776a86ac.css",
-    "static/js/main.0c27ae4d.js"
+    "static/js/main.c8bd00fa.js"
   ]
 }
