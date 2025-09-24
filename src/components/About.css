@@ -1,0 +1,94 @@
+.about-section {
+  position: relative; /* for overlay */
+  padding: 60px 4%;
+  background: url('/public/images/about-bg.jpg') center/cover no-repeat; 
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Overlay for better text readability */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* slightly stronger for contrast */
+  z-index: 1;
+}
+
+.about-container {
+  position: relative; /* above overlay */
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #f7b733;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #f7b733, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-summary {
+  font-size: 1.1rem;
+  font-weight: 500; /* slightly bolder */
+  line-height: 1.7;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* subtle shadow */
+  color: #d1d1d1;
+  margin-bottom: 30px;
+}
+
+/* Contact Me button */
+.about-btn {
+  background: #f7b733;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 2; /* above overlay */
+  position: relative;
+}
+
+.about-btn:hover {
+  background: #fc4a1a;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(247, 183, 51, 0.4);
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 120px; /* responsive width */
+  min-width: 120px;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f7b733;
+}
+
+.stat-text {
+  font-size: 1rem;
+  color: #d1d1d1;
+  margin-top: 4px;
+}

@@ -1,0 +1,77 @@
+/* Navbar Container */
+.navbar {
+  background: rgba(0, 0, 0, 0.85); /* slightly faded/transparent */
+  backdrop-filter: blur(8px);      /* subtle glassy effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+/* Navbar hover scroll effect (optional) */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 1); /* solid after scroll */
+}
+
+/* Brand */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #f7b733, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  color: #fc4a1a !important; /* gradient-inspired hover */
+}
+
+/* Nav Links */
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #ffffff !important;
+  margin-left: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f7b733 !important; /* accent color */
+  transform: scale(1.1);
+}
+
+/* Subtle bottom line glow effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px;
+  left: 50%;
+  background: #fc4a1a;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Mobile Toggle */
+.navbar-toggler {
+  border: none;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,183,51,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

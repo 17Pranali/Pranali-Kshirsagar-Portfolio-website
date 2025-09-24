@@ -1,0 +1,85 @@
+.education-section {
+  padding: 60px 4%;
+  background-color: #090911; /* dark background */
+  color: #fff;
+  text-align: center;
+}
+
+.education-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #f7b733, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; /* allows stacking on mobile */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 20px;
+  border-radius: 10px;
+  text-align: left;
+  flex: 1 1 250px; /* responsive card width */
+  min-width: 250px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.education-year {
+  font-weight: 700;
+  color: #fc4a1a;
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.education-institute,
+.education-grade {
+  font-size: 0.95rem;
+  color: #d1d1d1;
+  margin: 2px 0;
+}
+
+/* Responsive: stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .education-card {
+    width: 90%; /* take most of screen width */
+  }
+}
+.education-grade {
+  font-size: 1rem;       /* slightly bigger than institute text */
+  font-weight: 700;      /* make it bold */
+  color: #f7b733;        /* bright gradient-like color or accent */
+  margin: 2px 0;
+}
+
+/* Optional: gradient effect for grade like title */
+.education-grade-gradient {
+  background: linear-gradient(90deg, #f7b733, #fc4a1a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
